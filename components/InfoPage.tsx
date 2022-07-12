@@ -58,7 +58,10 @@ export const InfoPage = ({ onClose }: { onClose: () => void }) => (
           <div>
             <CopyLink />
           </div>
+          <h1 className="mt-4">Credits</h1>
+          <Credits />
 
+        </div>
       </div>
     </div>
   );
