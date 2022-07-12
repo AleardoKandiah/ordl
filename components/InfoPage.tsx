@@ -62,7 +62,7 @@ export const InfoPage = ({ onClose }: { onClose: () => void }) => (
           <Credits />
           <h1 className="mt-4">Source</h1>
           <p>
-            <a href="https://github.com/AleardoKandiah/ordl">Star me on GitHub!</a>
+            <a href="https://github.com/AleardoKandiah/ordl">Star me on GitHub ^_^!</a>
           </p>
         </div>
       </div>
