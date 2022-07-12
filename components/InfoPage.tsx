@@ -41,21 +41,25 @@ const CopyLink = () {
 
 export const InfoPage = ({ onClose }: { onClose: () => void }) => (
     <div className="fixed w-screen h-screen bg-white top-0 left-0 z-10">
-        <div>
-            <button
-                className="max-w-lg mx-auto relative p-8"
-                onClick={onClose}
-            >
-                <CloseSvg/>
-            </button>    
-            <div className="flex flex-col gap-3 mt-8">
-                <h1>Instructions</h1>
-                <Instructions />
-                <h1 className="mt-4">Share secret word</h1>
-                <p>
-                    Send this link to  a friend and they will have the same secret word
-                </p>
-            </div>
-        </div>
+      <div className="max-w-lg mx-auto relative p-8">
+        <button
+          className="absolute text-stone-700 top-2 p-2 right-2"
+          onClick={onClose}
+        >
+          <CloseSvg />
+        </button>
+        <div className="flex flex-col gap-3 mt-8">
+          <h1>Instructions</h1>
+          <Instructions />
+          <h1 className="mt-4">Share secret word</h1>
+          <p>
+            Send this link to a friend and they will have the same secret word.
+          </p>
+          <div>
+            <CopyLink />
+          </div>
+
+      </div>
     </div>
-)
+  );
+  
