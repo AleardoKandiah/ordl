@@ -7,3 +7,12 @@ export const SolutionWordContext = createContext({
 });
 
 
+export const SolutionWordProvider = ({ children }: { children: ReactNode }) => {
+  const [solutionWord, setSolutionWord] = useState("");
+
+  return (
+    <SolutionWordContext.Provider value={{ solutionWord, setSolutionWord }}>
+      {children}
+    </SolutionWordContext.Provider>
+  );
+};
