@@ -7,6 +7,7 @@ export const SolutionWordContext = createContext({
 });
 
 
+// retreive solution word
 export const SolutionWordProvider = ({ children }: { children: ReactNode }) => {
   const [solutionWord, setSolutionWord] = useState("");
 
