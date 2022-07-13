@@ -5,3 +5,5 @@ export const SolutionWordContext = createContext({
   solutionWord: "",
   setSolutionWord: (_: string) => {},
 });
+
+
