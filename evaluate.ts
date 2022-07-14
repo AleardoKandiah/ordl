@@ -16,4 +16,12 @@ export const evaluate = (
     }
     freqs[letter]++;
   }
-}
+
+  for (let i = 0; i < guessWord.length; i++) {
+    if (guessWord[i] === solutionWord[i]) {
+      freqs[guessWord[i]]--;
+      accuracies[i] = "right";
+    }
+  }
+
+};
