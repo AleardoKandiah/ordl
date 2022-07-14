@@ -17,7 +17,7 @@ export const evaluate = (
     freqs[letter]++;
   }
 
-  // Mark the right letters in right pos.
+  // Mark the right letters in right position.
   for (let i = 0; i < guessWord.length; i++) {
     if (guessWord[i] === solutionWord[i]) {
       freqs[guessWord[i]]--;
@@ -25,4 +25,15 @@ export const evaluate = (
     }
   }
 
+  for (let i = 0; i < guessWord.length; i++) {
+    if (
+      guessWord[i] !== solutionWord[i] && // Not in right pos...
+      freqs[guessWord[i]] > 0 // ...but occurs in the word w/o being all marked yellow or green...
+    ) {
+      freqs[guessWord[i]]--;
+      accuracies[i] = "almost";
+    }
+  }
+
+  return accuracies;
 };
