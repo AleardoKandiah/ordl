@@ -17,6 +17,7 @@ export const evaluate = (
     freqs[letter]++;
   }
 
+  // Mark the right letters in right pos.
   for (let i = 0; i < guessWord.length; i++) {
     if (guessWord[i] === solutionWord[i]) {
       freqs[guessWord[i]]--;
