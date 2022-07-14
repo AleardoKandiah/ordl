@@ -25,6 +25,7 @@ export const evaluate = (
     }
   }
 
+  // Mark the right letters in wrong position.
   for (let i = 0; i < guessWord.length; i++) {
     if (
       guessWord[i] !== solutionWord[i] && // Not in right pos...
