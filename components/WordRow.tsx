@@ -33,4 +33,27 @@ const Letter = ({ accuracy, value }: { accuracy: Accuracy; value: string }) => (
   </div>
 );
 
+export const WordRow = ({
+  guessWord,
+  isInput = false,
+}: {
+  guessWord: string;
+  isInput?: boolean; 
+}) => { 
+  const { solutionWord } = useContext(SolutionWordContext);
+  const accuracies = !isInput
+    ? evaluate(guessWord, solutionWord)
+    : new Array(guessWord.length).fill("unknown");
 
+  return (
+    <div className="flex gap-1 justify-start">
+      {guessWord.split("").map((letter, i) => (
+        <Letter value={letter} accuracy={accuracies[i]} key={i} />
+      ))}
+
+      {new Array(solutionWord.length - guessWord.length).fill(0).map((_, i) => (
+        <Letter key={i} value="" accuracy="unknown" />
+      ))}
+    </div>
+  );
+};
