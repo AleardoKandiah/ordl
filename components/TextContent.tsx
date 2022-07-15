@@ -23,7 +23,7 @@ export const Credits = () => (
       by <a href="https://twitter.com/powerlanguish">Josh Wardle</a>.
     </p>
     <p>
-      Developed by <a href="https://github.com/AleardoKandiah"></a>.
+      Developed by <a href="https://github.com/AleardoKandiah">Aleardo Kandiah</a>.
     </p>
   </>
 );
