@@ -38,7 +38,7 @@ export const WordRow = ({
   isInput = false,
 }: {
   guessWord: string;
-  isInput?: boolean; 
+  isInput?: boolean; // Allows for incomplete word.
 }) => { 
   const { solutionWord } = useContext(SolutionWordContext);
   const accuracies = !isInput
