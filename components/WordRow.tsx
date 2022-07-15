@@ -3,6 +3,8 @@ import { evaluate } from "../evaluate";
 import { Accuracy } from "./Game";
 import { SolutionWordContext } from "./SolutionWordContext";
 
+
+// Different Color for accuracy
 const Letter = ({ accuracy, value }: { accuracy: Accuracy; value: string }) => (
   <div
     className={`
