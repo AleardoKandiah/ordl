@@ -47,7 +47,7 @@ export const WordRow = ({
 
   return (
     <div className="flex gap-1 justify-start">
-        {/* split string input into subarrays and map the letters to evaluate   */}
+        {/* split string input into subarrays and map the letters o evaluate   */}
       {guessWord.split("").map((letter, i) => (
         <Letter value={letter} accuracy={accuracies[i]} key={i} />
       ))}
