@@ -51,7 +51,7 @@ export const WordRow = ({
       {guessWord.split("").map((letter, i) => (
         <Letter value={letter} accuracy={accuracies[i]} key={i} />
       ))}
-      {/* If incomplete word, fill rest with empty boxes. */}
+      {/* If incomplete word, fill rest with empty boxes */}
       {new Array(solutionWord.length - guessWord.length).fill(0).map((_, i) => (
         <Letter key={i} value="" accuracy="unknown" />
       ))}
