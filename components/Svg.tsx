@@ -1,4 +1,4 @@
-// Create SVG components for UI support
+// Create SVG components for UI support and scalability
 
 export const CheckSvg = () => (
     <svg
