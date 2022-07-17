@@ -1,3 +1,5 @@
+// Xreate SVG components for UI support
+
 export const CheckSvg = () => (
     <svg
       aria-hidden
