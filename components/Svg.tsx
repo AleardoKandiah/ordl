@@ -1,4 +1,4 @@
-// Xreate SVG components for UI support
+// Create SVG components for UI support
 
 export const CheckSvg = () => (
     <svg
