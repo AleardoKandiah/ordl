@@ -6,7 +6,7 @@ export const Nav = () => {
   const [isInfoPageOpen, setIsInfoPageOpen] = useState(false);
   return (
     <div className="flex justify-between items-center">
-      <h1 className="py-3 px-4">wrdl</h1>
+      <h1 className="py-3 px-4">ordl</h1>
       <button
         className="p-2 text-stone-700 mr-2"
         aria-label="Info"
