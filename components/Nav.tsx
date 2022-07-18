@@ -2,6 +2,7 @@ import { useState } from "react";
 import { InfoPage } from "./InfoPage";
 import { InfoSvg } from "./Svg";
 
+// Upon page load
 export const Nav = () => {
   const [isInfoPageOpen, setIsInfoPageOpen] = useState(false);
   return (
