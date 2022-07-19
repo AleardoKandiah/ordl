@@ -41,6 +41,8 @@ const Key = ({
 
 
 // add backspace and submit keyboard interactivity
+// iterate over layout keyboard 
+
 export const Keyboard = ({
     onKey,
     onBackspace,
