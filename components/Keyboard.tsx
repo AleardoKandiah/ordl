@@ -38,3 +38,49 @@ const Key = ({
     </button>
   );
 };
+
+
+// add backspace and submit keyboard interactivity
+export const Keyboard = ({
+    onKey,
+    onBackspace,
+    onSubmit,
+    guessedLetters,
+  }: {
+    onKey: (key: string) => void;
+    onBackspace: () => void;
+    onSubmit: () => void;
+    guessedLetters: { accuracy: Accuracy; value: string }[];
+  }) => {
+    const positionStyle = useIsMobile() ? "bottom-1" : "top-[540px]";
+  
+    return (
+      <div
+        className={`fixed ${positionStyle} w-[min(100vw,32rem)] flex flex-col gap-1 p-1`}
+      >
+        {LAYOUT.map((keys, i) => (
+          <div className="flex justify-center gap-1" key={i}>
+            {keys.map((key, j) => (
+              <Key
+                keyValue={key}
+                key={j}
+                onClick={() => {
+                  if (key === "backspace") {
+                    onBackspace();
+                  } else if (key === "submit") {
+                    onSubmit();
+                  } else {
+                    onKey(key);
+                  }
+                }}
+                accuracy={
+                  guessedLetters.find((letter) => letter.value === key)?.accuracy
+                }
+              />
+            ))}
+          </div>
+        ))}
+      </div>
+    );
+  };
+  
