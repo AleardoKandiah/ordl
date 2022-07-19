@@ -2,6 +2,7 @@ import { useIsMobile } from "../hooks";
 import { Accuracy } from "./Game";
 
 // add interactive keyboard
+// mark on keyboard keys which are defined accuracy {right, alomst, wrong}
 
 const LAYOUT = [
   ["q", "w", "e", "r", "t", "y", "u", "i", "o", "p"],
