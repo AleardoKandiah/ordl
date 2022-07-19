@@ -14,7 +14,6 @@ export const Nav = () => {
         onClick={() => setIsInfoPageOpen(true)}
       >
         <InfoSvg />
-        {/* page open */}
       </button>
       {isInfoPageOpen && <InfoPage onClose={() => setIsInfoPageOpen(false)} />}
     </div>
