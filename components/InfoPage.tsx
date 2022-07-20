@@ -5,9 +5,9 @@ import { Credits, Instructions } from "./TextContent";
 
 
 
-const CopyLink = () {
+const CopyLink = () =>{
     const {solutionWord} = useContext(SolutionWordContext);
-    const link = `${window.location.href}?word=${encodedURIComponent(
+    const link = `${window.location.href}?word=${encodeURIComponent(
         // buffer for base64 encoding into base64
         Buffer.from(solutionWord).toString("base64")
     )}`;
@@ -19,7 +19,7 @@ const CopyLink = () {
     useEffect(() => {
         if(recentlyCopied) {
             const timeout = setTimeout(() => {
-                setRecentlyCopied(flase);
+                setRecentlyCopied(false);
             }, 1000);
             return () => clearTimeout(timeout);
         }
