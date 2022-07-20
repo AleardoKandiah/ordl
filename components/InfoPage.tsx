@@ -3,6 +3,8 @@ import { SolutionWordContext } from "./SolutionWordContext";
 import { CheckSvg, CopySvg, CloseSvg } from "./Svg";
 import { Credits, Instructions } from "./TextContent";
 
+// Allow for the same word puzzle for friends
+// allow for friends to share link
 
 
 const CopyLink = () =>{
