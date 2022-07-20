@@ -1,4 +1,7 @@
 import { useContext, useEffect, useState } from "react";
+import { SolutionWordContext } from "./SolutionWordContext";
+import { CheckSvg, CopySvg, CloseSvg } from "./Svg";
+import { Credits, Instructions } from "./TextContent";
 
 
 
