@@ -1,13 +1,12 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
-import { useEffect } from 'react';
+import type { NextPage } from "next";
+import Head from "next/head";
+import { Game } from "../components/Game";
+import { Nav } from "../components/Nav";
+import { SolutionWordProvider } from "../components/SolutionWordContext";
+import { useEffect } from "react";
 
 const Home: NextPage = () => {
-  // API key
-  useEffect(() => {
-    Cohere.init("1MH_");
-  }, [])
+
   
   return (
    <div>
