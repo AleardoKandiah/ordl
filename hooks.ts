@@ -14,5 +14,5 @@ export const useIsMobile = () => {
     return () => window.removeEventListener("resize", onWindowResize);
   }, []);
 
-  return width <= 768;
+  return width <= 768
 };
