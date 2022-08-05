@@ -29,7 +29,7 @@ const Key = ({
           : accuracy === "almost"
           ? "bg-yellow-300"
           : accuracy === "wrong"
-          ? "bg-stone-200"
+          ? "bg-stone-400"
           : ""
       }`}
       onClick={onClick}
